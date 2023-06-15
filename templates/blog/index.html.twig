@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block {
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+    <div class="block">blog</div>
+    <div class="block">
+        <article>
+            <h1>Salut {{ controller_name }}! ✅</h1>
+            <div>
+            Projet BAKPAK
+            </div>
+            <div>
+                <img src="http://placehold.it/350x150" alt="">
+                <p> Introduction :  
+
+                    Présentation de BAKPAK, entreprise spécialisée dans les enceintes portatives de haute qualité. 
+
+                    Problèmes actuels liés à la maintenance externalisée et aux coûts élevés des pièces de rechange. 
+
+                    Exemple : Les coûts élevés de maintenance ont un impact négatif sur nos marges bénéficiaires et notre compétitivité. 
+
+                    Impacts attendus : 
+
+                    Optimisation des cycles de production grâce à une maintenance proactive. 
+
+                    Réduction des coûts de maintenance et des temps d'arrêt de production. 
+
+                    Exemple : En détectant les problèmes à un stade précoce, nous pouvons éviter les pannes coûteuses et minimiser les arrêts de </p>
+                <p>Il est à compléter</p>
+                <a href=" {{ path('blog_show')}} " class="btn btn-primary">Lire la suite</a>
+            </div>
+        </article>
+    </div>
+    <div class="block">blog</div>
+</div>
+{% endblock %}
